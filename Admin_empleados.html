@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./extra/style.css" />
+    <title>Administrador</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <aside>
+      <div class="menu">
+        <img class="menu__logo" src="imagenes/logo.svg" alt="" />
+        <a href="Admin_inicio.html" class="menu__btn">
+          <img class="menu__icon" src="imagenes/icon-home.svg" alt="" />
+          <h2 class="menu__categoría">Inicio</h2>
+        </a>
+        <a href="Admin_inventario.html" class="menu__btn ">
+          <img class="menu__icon" src="imagenes/icon_inventario.png" alt="" />
+          <h2 class="menu__categoría">Inventario</h2>
+        </a>
+        <a href="Admin_empleados.html" class="menu__btn activo">
+          <img class="menu__icon" src="imagenes/icon_empleados.png" alt="" />
+          <h2 class="menu__categoría">Empleados</h2>
+        </a>
+      </div>
+      <!-- -->
+      <button class="cerrar_sesion" href="">
+        <img class="menu__icon" src="imagenes/icon-salir.svg" alt="" />
+        <h2 class="menu__categoría">Cerrar Sesión</h2>
+      </button>
+    </aside>
+
+    <main>
+      <header class="header">
+        <h2 class="header__tipo-usuario">ADMINISTRADOR</h2>
+        <div class="header__usuario">
+          <h3 class="header__nombre">Jose Rodolfo</h3>
+          <img
+            class="header__icon-usuario"
+            src="./imagenes/icon-usuario.svg"
+            alt=""
+          />
+        </div>
+      </header>
+
+      <div class="contenedor contenedor_inventario">
+        <div class="titulo">
+          <h1>Empleados</h1>
+        </div>
+      
+
+        <div class="contenedor_tabla">
+          <table class="tabla-empleados">
+            <tr>
+              <th>Nombre</th>
+              <th>ID</th>
+              <th>Usuario</th>
+              <th>Rol</th>
+              <th>Ventas</th>
+            </tr>
+            <tr>
+                <td>s</td>
+                <td>Lorem, ipsum </td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+            <tr>
+                <td>s</td>
+                <td>Lorem, ipsum </td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+            <tr>
+              <td>s</td>
+              <td>Lorem, ipsum </td>
+              <td>Lorem, ipsum.</td>
+              <td>12</td>
+              <td>235</td>
+            </tr>
+            <tr>
+                <td>s</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>Lorem, ipsum </td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>Lorem, ipsum</td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>Lorem, ipsum</td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>Lorem, ipsum</td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>Lorem, ipsum</td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>Lorem, ipsum</td>
+                <td>Lorem, ipsum.</td>
+                <td>12</td>
+                <td>235</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+      <script src="./extra/doc.js"></script>
+    </main>
+
+
+        <!-- ----------------- VENTANA FLOTANTE ------------- -->
+        <div id="vent" class="container-ventana">
+          <div class="ventana">
+            <a class="ventana__cerrar" href="javascript:cerrar()"
+              ><img
+                class="ventana__cerrar-img"
+                src="./imagenes/icon-cerrar.svg"
+                alt=""
+            /></a>
+            <h2 class="ventana__titulo">Equipo</h2>
+            <div class="ventana__caracteristicas">
+              <img class="ventana__img" src="./imagenes/iphone.jpg" alt="" />
+              <div class="ventana__descripcion">
+                <p class="ventana__detalle">
+                  Nombre: <span class="ventana__detalle-valor">Galaxy</span>
+                </p>
+                <p class="ventana__detalle">
+                  Descripción:
+                  <span class="ventana__detalle-valor">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Soluta, fugit.
+                  </span>
+                </p>
+                <p class="ventana__detalle">
+                  Garantia: <span class="ventana__detalle-valor">10 años</span>
+                </p>
+                <p class="ventana__detalle">
+                  Precio Producto: <span class="ventana__detalle-valor">$564</span>
+                </p>
+                <p class="ventana__detalle">
+                  Stock: <span class="ventana__detalle-valor">10</span>
+                </p>
+              </div>
+            </div>
+            <div class="container-promos">
+              <div class="promo">
+                <h3 class="promo__titulo">PLAN</h3>
+                <p class="promo__descripcion">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="promo">
+                <h3 class="promo__titulo">ACCESORIO</h3>
+                <p class="promo__descripcion">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="promo">
+                <h3 class="promo__titulo">OFERTA</h3>
+                <p class="promo__descripcion">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+  </body>
+</html>

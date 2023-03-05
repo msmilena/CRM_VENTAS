@@ -21,7 +21,7 @@
           <img class="menu__icon" src="imagenes/icon_inventario.png" alt="" />
           <h2 class="menu__categoría">Inventario</h2>
         </a>
-        <a href="index.html" class="menu__btn">
+        <a href="Admin_empleados.html" class="menu__btn">
           <img class="menu__icon" src="imagenes/icon_empleados.png" alt="" />
           <h2 class="menu__categoría">Empleados</h2>
         </a>
@@ -208,13 +208,13 @@
             <tr>
               <td>
                 <div class="opciones">
-                  <a href="./Admin_inicio.html" class="boton ver" id="boton">
+                  <a href="javascript:abrir()" class="boton ver" id="boton">
                     <span class="icono"
                       ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
 
-                  <a href="./Admin_inicio.html" class="boton agregar" id="boton">
+                  <a href="#" class="boton agregar" id="boton">
                     <span class="icono"
                       ><img src="./imagenes/mas.png" alt=""
                     /></span>
@@ -451,5 +451,64 @@
 
       <script src="./extra/doc.js"></script>
     </main>
+
+
+        <!-- ----------------- VENTANA FLOTANTE ------------- -->
+        <div id="vent" class="container-ventana">
+          <div class="ventana">
+            <a class="ventana__cerrar" href="javascript:cerrar()"
+              ><img
+                class="ventana__cerrar-img"
+                src="./imagenes/icon-cerrar.svg"
+                alt=""
+            /></a>
+            <h2 class="ventana__titulo">Equipo</h2>
+            <div class="ventana__caracteristicas">
+              <img class="ventana__img" src="./imagenes/iphone.jpg" alt="" />
+              <div class="ventana__descripcion">
+                <p class="ventana__detalle">
+                  Nombre: <span class="ventana__detalle-valor">Galaxy</span>
+                </p>
+                <p class="ventana__detalle">
+                  Descripción:
+                  <span class="ventana__detalle-valor">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Soluta, fugit.
+                  </span>
+                </p>
+                <p class="ventana__detalle">
+                  Garantia: <span class="ventana__detalle-valor">10 años</span>
+                </p>
+                <p class="ventana__detalle">
+                  Precio Producto: <span class="ventana__detalle-valor">$564</span>
+                </p>
+                <p class="ventana__detalle">
+                  Stock: <span class="ventana__detalle-valor">10</span>
+                </p>
+              </div>
+            </div>
+            <div class="container-promos">
+              <div class="promo">
+                <h3 class="promo__titulo">PLAN</h3>
+                <p class="promo__descripcion">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="promo">
+                <h3 class="promo__titulo">ACCESORIO</h3>
+                <p class="promo__descripcion">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+              <div class="promo">
+                <h3 class="promo__titulo">OFERTA</h3>
+                <p class="promo__descripcion">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
   </body>
 </html>
