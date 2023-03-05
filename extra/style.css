@@ -545,3 +545,69 @@ hr {
 .btn-ver-carrito a {
   text-decoration: none;
 }
+/* BOLETA DE PAGO */
+
+.container-boletas {
+  width: 100vw;
+  height: 100vh;
+  background: #222533;
+  position: FIXED;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boleta-header {
+  width: 1000px;
+  height: 50px;
+
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.icon-volver {
+  width: 20px;
+}
+
+.boleta {
+  width: 700px;
+  height: 500px;
+  padding: 50px;
+  border-radius: 20px;
+  background: #ffffff;
+  margin: 35px 0;
+}
+.tabla-boleta {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid black;
+  background: #d9d9d9;
+
+  color: #3e1c6c;
+  border-spacing: 0;
+  text-align: center;
+}
+
+.tabla-boleta thead th {
+  border: 1px solid black;
+}
+.tabla-boleta tbody td {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.btn-boletas {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boleta__detalles {
+  margin: 30px 0;
+}

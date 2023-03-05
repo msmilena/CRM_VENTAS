@@ -211,21 +211,25 @@
           <tr>
             <td>
               <div class="opciones">
-                <a href="javascript:abrir()" class="boton ver" id="boton">
+                <a href="" class="boton ver" id="boton">
                   <span class="icono"
-                    ><img src="/imagenes/acercar.png" alt=""
+                    ><img src="./imagenes/acercar.png" alt=""
                   /></span>
                 </a>
 
-                <a href="#" class="boton agregar" id="boton">
+                <a
+                  href="javascript:abrircarrito()"
+                  class="boton agregar"
+                  id="boton"
+                >
                   <span class="icono"
-                    ><img src="/imagenes/mas.png" alt=""
+                    ><img src="./imagenes/mas.png" alt=""
                   /></span>
                 </a>
               </div>
             </td>
             <td>
-              <img class="img_miniatura" src="/imagenes/iphone.png" alt="" />
+              <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
             </td>
 
             <td>Lorem, ipsum dolor.</td>
@@ -356,9 +360,126 @@
         <hr />
 
         <div class="btns-carrito">
-          <a href="" class="boton">Cotizar</a>
-          <a href="" class="boton">Generar Venta</a>
+          <a href="javascript:abrircotizacion()" class="boton">Cotizar</a>
+          <a href="javascript: abrircomprobante()" class="boton"
+            >Generar Venta</a
+          >
         </div>
+      </div>
+    </div>
+    <!-------------------- BOLETA DE PAGO------------ -->
+    <div id="boleta-comprobante" class="container-boletas">
+      <a href="javascript:cerrarcomprobante()" class="boleta-header"
+        ><img class="icon-volver" src="./imagenes/icon-volver.svg" alt="" />
+        <h3>volver</h3></a
+      >
+
+      <div class="boleta">
+        <img src="./imagenes/empresa-boleto.png" alt="" />
+        <div class="boleta__detalles">
+          <h3>DETALLES DE LA EMPRESA<span></span></h3>
+          <h3>PÁGINA WEB: <span></span></h3>
+          <h3>DIRECCIÓN: <span>LINEA 1</span></h3>
+          <h3>DIRECCIÓN: <span>LINEA 2</span></h3>
+          <h3>DEPARTAMENTO: <span>LIMA</span></h3>
+          <h3>PAIS: <span>PERÚ</span></h3>
+        </div>
+
+        <h3>ATENDIDO POR: <span>ID_VENDEDOR</span></h3>
+
+        <h3>BOLETA Nº: <span>ID_BOLETA</span></h3>
+        <h3>FECHA DE EMISION: <span>XX/XX/XX</span></h3>
+
+        <table class="tabla-boleta">
+          <thead>
+            <tr>
+              <th>Nombre Producto</th>
+              <th>Precio Unitario</th>
+              <th>Descuento</th>
+              <th>Cantidad</th>
+              <th>Precio Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>asda</td>
+              <td>sadas</td>
+              <td>sadas</td>
+              <td>sadas</td>
+              <td>sadas</td>
+            </tr>
+            <tr>
+              <td>asda</td>
+              <td>sadas</td>
+              <td>sadas</td>
+              <td>sadas</td>
+              <td>sadas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="btn-boletas">
+        <a href="#" class="boton">Enviar Comprobante</a>
+        <a href="#" class="boton">Imprimir Comprobante</a>
+      </div>
+    </div>
+
+    <!-------------------- COTIZACION----------- -->
+    <div id="boleta-cotizacion" class="container-boletas">
+      <a href="javascript:cerrarcotizacion()" class="boleta-header"
+        ><img class="icon-volver" src="./imagenes/icon-volver.svg" alt="" />
+        <h3>volver</h3></a
+      >
+
+      <div class="boleta">
+        <img src="./imagenes/empresa-boleto.png" alt="" />
+        <div class="boleta__detalles">
+          <h3>DETALLES DE LA EMPRESA<span></span></h3>
+          <h3>PÁGINA WEB: <span></span></h3>
+          <h3>DIRECCIÓN: <span>LINEA 1</span></h3>
+          <h3>DIRECCIÓN: <span>LINEA 2</span></h3>
+          <h3>DEPARTAMENTO: <span>LIMA</span></h3>
+          <h3>PAIS: <span>PERÚ</span></h3>
+        </div>
+
+        <h3>ATENDIDO POR: <span>ID_VENDEDOR</span></h3>
+
+        <h3>BOLETA Nº: <span>ID_BOLETA</span></h3>
+        <h3>FECHA DE EMISION: <span>XX/XX/XX</span></h3>
+
+        <table class="tabla-boleta">
+          <thead>
+            <tr>
+              <th>Nombre Producto</th>
+              <th>Precio Unitario</th>
+              <th>Descuento</th>
+              <th>Cantidad</th>
+              <th>Precio Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>asda</td>
+              <td>sadas</td>
+              <td>sadas</td>
+              <td>sadas</td>
+              <td>sadas</td>
+            </tr>
+            <tr>
+              <td>asda</td>
+              <td>sadas</td>
+              <td>sadas</td>
+              <td>sadas</td>
+              <td>sadas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="btn-boletas">
+        <a href="#" class="boton">Enviar Cotización</a>
+        <a href="#" class="boton">Imprimir Cotización</a>
       </div>
     </div>
 
