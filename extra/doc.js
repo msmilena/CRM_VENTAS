@@ -22,3 +22,5 @@ if (btn_expandir && busqueda_avanzada) {
     busqueda_avanzada.classList.toggle('hidden');
   });
 }
+
+
