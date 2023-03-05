@@ -15,8 +15,10 @@ function cerrarcarrito() {
 }
 
 /* Búsqueda */
-var btn_expandir = document.querySelector(".texto_busqueda_avanzada");
-var busqueda_avanzada = document.querySelector(".busqueda_avanzada");
-btn_expandir.addEventListener("mousedown", function () {
-  busqueda_avanzada.classList.toggle("hidden");
-});
+var btn_expandir = document.querySelector('.texto_busqueda_avanzada');
+var busqueda_avanzada = document.querySelector('.busqueda_avanzada');
+if (btn_expandir && busqueda_avanzada) {
+  btn_expandir.addEventListener('mousedown', function () {
+    busqueda_avanzada.classList.toggle('hidden');
+  });
+}
