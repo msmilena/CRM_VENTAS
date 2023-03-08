@@ -6,6 +6,40 @@ function cerrar() {
   document.getElementById("vent").style.display = "none";
 }
 
+/**Ventana Agregar stock */
+function abrir_stock() {
+  document.getElementById("vent_stock").style.display = "flex";
+}
+function cerrar_stock() {
+  document.getElementById("vent_stock").style.display = "none";
+}
+
+/**Ventana Abrir empleado */
+function abrir_empleado() {
+  document.getElementById("vent_empleado").style.display = "flex";
+}
+function cerrar_empleado() {
+  document.getElementById("vent_empleado").style.display = "none";
+}
+
+/**Ventana editar*/
+function editar() {
+  document.getElementById("vent_editar").style.display = "flex";
+}
+function cerrar_editar() {
+  document.getElementById("vent_editar").style.display = "none";
+  cerrar();
+}
+
+/**añadir nuevo*/
+function abrir_nuevo() {
+  document.getElementById("vent_nuevo").style.display = "flex";
+}
+function cerrar_nuevo() {
+  document.getElementById("vent_nuevo").style.display = "none";
+
+}
+
 /*carrito*/
 function abrircarrito() {
   document.getElementById("carrito").style.display = "flex";
