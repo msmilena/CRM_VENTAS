@@ -243,7 +243,7 @@ main {
 }
 
 .avanzada {
-  gap: 7vw;
+  gap: 5.5vw;
 }
 
 .input_num {
@@ -275,7 +275,7 @@ main {
 }
 
 .fila_minmax {
-  gap: 6vw;
+  gap: 5.4vw;
 }
 
 .contenedor_minmax {
@@ -343,7 +343,7 @@ main {
   align-items: center;
 }
 .ventana {
-  width: 600px;
+  width: 800px;
   padding: 40px;
   border-radius: 30px;
   /* height: 500px; */
@@ -366,7 +366,7 @@ main {
 .ventana__titulo {
   align-self: center;
   color: white;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-family: "Montserrat", sans-serif;
 }
 .ventana__caracteristicas {
@@ -376,7 +376,7 @@ main {
 .ventana__descripcion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
+  
   color: white;
 
   font-family: "Montserrat", sans-serif;
@@ -387,6 +387,8 @@ main {
 }
 
 .ventana__detalle {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -403,7 +405,7 @@ main {
 }
 .promo__titulo {
   margin-bottom: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 .promo__descripcion {
@@ -642,30 +644,52 @@ hr {
 }
 
 
-/* ================ Tabla empleados ====================== */
+
+.tabla-empleados th:first-child {
+  width: 7%;
+}
+
+.texto_stock{
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+}
 
 
-.tabla-empleados {
+/* ================ Tabla empleados mini ====================== */
+
+
+.tabla-empleados-mini {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
   border-collapse: collapse;
-  width: 62vw;
+  width: 50vw;
   height: 60vh;
   font-weight: 400;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.tabla-empleados th{
+.tabla-empleados-mini th{
   font-size: 1.1rem;
   border-top: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgb(255, 255, 255);
   font-weight: 400;
-  width: 17%;
+  width: 33.3%;
   height: 12vh;
 }
 
-.tabla-empleados td {
+.tabla-empleados-mini td {
   font-size: 1rem;
 
   height: 12vh;
   padding: 0.8vh;
   text-align: center;
+}
+
+
+.fila_equipo {
+  gap: 1vw;
+  display: flex;
+  flex-wrap: wrap;
 }
