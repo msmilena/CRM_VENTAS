@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./extra/style.css" />
+    <title>Vendedor</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <aside>
+      <div class="menu">
+        <img class="menu__logo" src="imagenes/logo.svg" alt="" />
+        <a href="Vendedor_Inicio.html" class="menu__btn">
+          <img class="menu__icon" src="imagenes/icon-home.svg" alt="" />
+          <h2 class="menu__categoría">Inicio</h2>
+        </a>
+        <a href="Vendedor_inventario.html" class="menu__btn">
+          <img class="menu__icon" src="./imagenes/Icono-Productos.svg" alt="" />
+          <h2 class="menu__categoría">Productos</h2>
+        </a>
+        <a href="Vendedor_ventas.html" class="menu__btn activo">
+          <img class="menu__icon" src="imagenes/icon_ventas.png" alt="" />
+          <h2 class="menu__categoría">Ventas</h2>
+        </a>
+        <a href="Vendedor_vender.html" class="menu__btn">
+          <img class="menu__icon" src="imagenes/Icono-Vender.png" alt="" />
+          <h2 class="menu__categoría">Vender</h2>
+        </a>
+      </div>
+      <!-- -->
+      <button class="cerrar_sesion" href="">
+        <img class="menu__icon" src="imagenes/icon-salir.svg" alt="" />
+        <h2 class="menu__categoría">Cerrar Sesión</h2>
+      </button>
+    </aside>
+
+    <main>
+      <header class="header">
+        <h2 class="header__tipo-usuario">VENDEDOR</h2>
+        <div class="header__usuario">
+          <h3 class="header__nombre">Jose Rodolfo</h3>
+          <img
+            class="header__icon-usuario"
+            src="./imagenes/icon-usuario.svg"
+            alt=""
+          />
+        </div>
+      </header>
+
+      <div class="contenedor contenedor_inventario">
+        <div class="titulo">
+          <h1>Ventas</h1>
+        </div>
+
+        <div class="fila">
+          <div class="seleccionador">
+            <select name="seleccionador" id="seleccionador">
+              <option value="buscar">Buscar por</option>
+              <option value="nombre">Nombre</option>
+              <option value="id">ID</option>
+              <option value="id">Accesorio</option>
+            </select>
+          </div>
+          <input
+            class="busqueda"
+            type="text"
+            name="buscar"
+            id="buscar"
+            placeholder="Buscar"
+          />
+
+          <button class="boton" id="boton">Filtrar</button>
+        </div>
+
+        <div class="contenedor_tabla">
+          <table class="tabla-empleados">
+            <tr>
+              <th>ID</th>
+              <th>Fecha</th>
+              <th>Cliente</th>
+              <th>FormadePago</th>
+              <th>Monto</th>
+            </tr>
+            <tr>
+              <td>56456</td>
+              <td>a</td>
+              <td>Lorem, ipsum</td>
+              <td>Lorem, ipsum.</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>56456</td>
+              <td>a</td>
+              <td>Lorem, ipsum</td>
+              <td>Lorem, ipsum.</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>56456</td>
+              <td>a</td>
+              <td>Lorem, ipsum</td>
+              <td>Lorem, ipsum.</td>
+              <td>12</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------- VENTANA FLOTANTE ------------- -->
+    <div id="vent_empleado" class="container-ventana">
+      <div class="ventana">
+        <a class="ventana__cerrar" href="javascript:cerrar_empleado()"
+          ><img
+            class="ventana__cerrar-img"
+            src="./imagenes/icon-cerrar.svg"
+            alt=""
+        /></a>
+        <h2 class="ventana__titulo">Empleado-ventas</h2>
+
+        <table class="tabla-empleados-mini">
+          <tr>
+            <th>ID</th>
+            <th>Monto</th>
+            <th>Fecha</th>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum</td>
+            <td>Lorem, ipsum.</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum</td>
+            <td>Lorem, ipsum.</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum</td>
+            <td>Lorem, ipsum.</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Lorem, ipsum</td>
+            <td>Lorem, ipsum.</td>
+            <td>12</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./extra/doc.js"></script>
+  </body>
+</html>

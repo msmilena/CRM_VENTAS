@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./extra/style.css" />
-    <title>Almacen-inventario</title>
+    <title>vendedor</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
@@ -13,13 +13,21 @@
     <aside>
       <div class="menu">
         <img class="menu__logo" src="imagenes/logo.svg" alt="" />
-        <a href="Almacen_inicio.html" class="menu__btn">
+        <a href="Vendedor_Inicio.html" class="menu__btn">
           <img class="menu__icon" src="imagenes/icon-home.svg" alt="" />
           <h2 class="menu__categoría">Inicio</h2>
         </a>
-        <a href="Almacen_inventario.html" class="menu__btn activo">
-          <img class="menu__icon" src="imagenes/icon_inventario.png" alt="" />
-          <h2 class="menu__categoría">Inventario</h2>
+        <a href="Vendedor_inventario.html" class="menu__btn activo">
+          <img class="menu__icon" src="./imagenes/Icono-Productos.svg" alt="" />
+          <h2 class="menu__categoría">Productos</h2>
+        </a>
+        <a href="Vendedor_ventas.html" class="menu__btn">
+          <img class="menu__icon" src="imagenes/icon_ventas.png" alt="" />
+          <h2 class="menu__categoría">Ventas</h2>
+        </a>
+        <a href="Vendedor_vender.html" class="menu__btn">
+          <img class="menu__icon" src="imagenes/Icono-Vender.png" alt="" />
+          <h2 class="menu__categoría">Vender</h2>
         </a>
       </div>
       <!-- -->
@@ -31,7 +39,7 @@
 
     <main>
       <header class="header">
-        <h2 class="header__tipo-usuario">JEFE DE ALMACÉN</h2>
+        <h2 class="header__tipo-usuario">VENDEDOR</h2>
         <div class="header__usuario">
           <h3 class="header__nombre">Jose Rodolfo</h3>
           <img
@@ -168,7 +176,7 @@
         <div class="contenedor_tabla">
           <table class="tabla-productos">
             <tr>
-              <th>Ver / modificar stock</th>
+              <th>Ver</th>
               <th></th>
               <th>Nombre</th>
               <th>ID</th>
@@ -183,14 +191,22 @@
                       ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
+                </div>
+              </td>
+              <td>
+                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
+              </td>
+              <td>Lorem, ipsum dolor.</td>
+              <td>Lorem, ipsum.</td>
+              <td>12</td>
+              <td>235</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="opciones">
+                  <a href="javascript:abrir()" class="boton ver" id="boton">
                     <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
+                      ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
                 </div>
@@ -211,14 +227,22 @@
                       ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
+                </div>
+              </td>
+              <td>
+                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
+              </td>
+              <td>Lorem, ipsum dolor.</td>
+              <td>Lorem, ipsum.</td>
+              <td>12</td>
+              <td>235</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="opciones">
+                  <a href="javascript:abrir()" class="boton ver" id="boton">
                     <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
+                      ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
                 </div>
@@ -239,14 +263,22 @@
                       ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
+                </div>
+              </td>
+              <td>
+                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
+              </td>
+              <td>Lorem, ipsum dolor.</td>
+              <td>Lorem, ipsum.</td>
+              <td>12</td>
+              <td>235</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="opciones">
+                  <a href="javascript:abrir()" class="boton ver" id="boton">
                     <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
+                      ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
                 </div>
@@ -267,14 +299,22 @@
                       ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
+                </div>
+              </td>
+              <td>
+                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
+              </td>
+              <td>Lorem, ipsum dolor.</td>
+              <td>Lorem, ipsum.</td>
+              <td>12</td>
+              <td>235</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="opciones">
+                  <a href="javascript:abrir()" class="boton ver" id="boton">
                     <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
+                      ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
                 </div>
@@ -295,16 +335,6 @@
                       ><img src="./imagenes/acercar.png" alt=""
                     /></span>
                   </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
-                    /></span>
-                  </a>
                 </div>
               </td>
               <td>
@@ -321,212 +351,6 @@
                   <a href="javascript:abrir()" class="boton ver" id="boton">
                     <span class="icono"
                       ><img src="./imagenes/acercar.png" alt=""
-                    /></span>
-                  </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
-                    /></span>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
-              </td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>12</td>
-              <td>235</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="opciones">
-                  <a href="javascript:abrir()" class="boton ver" id="boton">
-                    <span class="icono"
-                      ><img src="./imagenes/acercar.png" alt=""
-                    /></span>
-                  </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
-                    /></span>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
-              </td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>12</td>
-              <td>235</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="opciones">
-                  <a href="javascript:abrir()" class="boton ver" id="boton">
-                    <span class="icono"
-                      ><img src="./imagenes/acercar.png" alt=""
-                    /></span>
-                  </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
-                    /></span>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
-              </td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>12</td>
-              <td>235</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="opciones">
-                  <a href="javascript:abrir()" class="boton ver" id="boton">
-                    <span class="icono"
-                      ><img src="./imagenes/acercar.png" alt=""
-                    /></span>
-                  </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
-                    /></span>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
-              </td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>12</td>
-              <td>235</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="opciones">
-                  <a href="javascript:abrir()" class="boton ver" id="boton">
-                    <span class="icono"
-                      ><img src="./imagenes/acercar.png" alt=""
-                    /></span>
-                  </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
-                    /></span>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
-              </td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>12</td>
-              <td>235</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="opciones">
-                  <a href="javascript:abrir()" class="boton ver" id="boton">
-                    <span class="icono"
-                      ><img src="./imagenes/acercar.png" alt=""
-                    /></span>
-                  </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
-                    /></span>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
-              </td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>12</td>
-              <td>235</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="opciones">
-                  <a href="javascript:abrir()" class="boton ver" id="boton">
-                    <span class="icono"
-                      ><img src="./imagenes/acercar.png" alt=""
-                    /></span>
-                  </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
-                    /></span>
-                  </a>
-                </div>
-              </td>
-              <td>
-                <img class="img_miniatura" src="./imagenes/iphone.png" alt="" />
-              </td>
-              <td>Lorem, ipsum dolor.</td>
-              <td>Lorem, ipsum.</td>
-              <td>12</td>
-              <td>235</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="opciones">
-                  <a href="javascript:abrir()" class="boton ver" id="boton">
-                    <span class="icono"
-                      ><img src="./imagenes/acercar.png" alt=""
-                    /></span>
-                  </a>
-
-                  <a
-                    href="javascript:abrir_stock()"
-                    class="boton agregar"
-                    id="boton"
-                  >
-                    <span class="icono"
-                      ><img src="./imagenes/icono-actualizar-stock.png" alt=""
                     /></span>
                   </a>
                 </div>
@@ -601,32 +425,6 @@
             Stock: <span class="ventana__detalle-valor">10</span>
           </p>
         </div>
-      </div>
-    </div>
-
-    <!-- ----------------- VENTANA FLOTANTE ------------- -->
-    <div id="vent_stock" class="container-ventana">
-      <div class="ventana">
-        <a class="ventana__cerrar" href="javascript:cerrar_stock()"
-          ><img
-            class="ventana__cerrar-img"
-            src="./imagenes/icon-cerrar.svg"
-            alt=""
-        /></a>
-        <h2 class="ventana__titulo">Modificar stock</h2>
-        <h4 class="texto_stock">Stock actual:</h4>
-        <h4 class="texto_stock">Nuevo stock:</h4>
-        <input
-          class="busqueda"
-          type="text"
-          name="buscar"
-          id="buscar"
-          placeholder="Nuevo stock"
-        />
-
-        <button class="boton" id="boton">Cambiar</button>
-
-        <hr />
       </div>
     </div>
 

@@ -17,7 +17,7 @@
           <img class="menu__icon" src="imagenes/icon-home.svg" alt="" />
           <h2 class="menu__categoría">Inicio</h2>
         </a>
-        <a href="Vendedor_productos.html" class="menu__btn">
+        <a href="Vendedor_inventario.html" class="menu__btn">
           <img class="menu__icon" src="./imagenes/Icono-Productos.svg" alt="" />
           <h2 class="menu__categoría">Productos</h2>
         </a>
@@ -314,6 +314,13 @@
             alt=""
         /></a>
         <h2 class="ventana__titulo">Carrito de Venta</h2>
+
+        <input
+          class="busqueda"
+          type="text"
+          id="cliendId"
+          placeholder="Cliente"
+        />
         <table class="tabla-carrito">
           <thead>
             <tr>
@@ -350,13 +357,23 @@
             Subtotal: <span class="carrito-importes-valor"> ₦1,225,000.00</span>
           </h3>
           <h3 class="carrito-importes">
-            Subtotal: <span class="carrito-importes-valor"> ₦1,225,000.00</span>
+            Descuento:
+            <span class="carrito-importes-valor"> ₦1,225,000.00</span>
           </h3>
           <h3 class="carrito-importes">
-            Subtotal: <span class="carrito-importes-valor"> ₦1,225,000.00</span>
+            Importe Total:
+            <span class="carrito-importes-valor"> ₦1,225,000.00</span>
           </h3>
         </div>
-
+        <div class="seleccionador">
+          <select name="seleccionador" id="seleccionador">
+            <option value=" ">Tipo de Pago</option>
+            <option value="EFECTIVO">Efectivo</option>
+            <option value="TARJETA DE CREDITO">Tarjeta de credito</option>
+            <option value="TARJETA DE DEBITO">Tarjeta de debito</option>
+            <option value="APLICACION DE PAGO">Aplicación de Pago</option>
+          </select>
+        </div>
         <hr />
 
         <div class="btns-carrito">
