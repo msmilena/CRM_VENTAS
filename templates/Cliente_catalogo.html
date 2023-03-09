@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Cliente-Inicio</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <aside>
+      <div class="menu">
+        <img class="menu__logo" src="./static/resources/images/logo.svg" alt="" />
+        <a href="/cliente_inicio" class="menu__btn">
+          <img class="menu__icon" src="./static/resources/images/icon-home.svg" alt="" />
+          <h2 class="menu__categoría">Inicio</h2>
+        </a>
+        <a href="/cliente_catalogo" class="menu__btn activo">
+          <img class="menu__icon" src="./static/resources/images/icon_inventario.png" alt="" />
+          <h2 class="menu__categoría">Catálogo</h2>
+        </a>
+      </div>
+      <button class="cerrar_sesion" href="">
+        <img class="menu__icon" src="./static/resources/images/icon-salir.svg" alt="" />
+        <h2 class="menu__categoría">Cerrar Sesión</h2>
+      </button>
+    </aside>
+    <main>
+      <header class="header">
+        <h2 class="header__tipo-usuario">CLIENTE</h2>
+        <div class="header__usuario">
+            <h3 class="header__nombre">Jose Rodolfo</h3>
+            <img class="header__icon-usuario" src="././static/resources/images/icon-usuario.svg" alt="" />
+        </div>
+    </header>
+      <div class="contenedor contenedor_inventario">
+        <div class="titulo">
+          <h1>Inventario</h1>
+        </div>
+        <div class="botones">
+          <div class="fila">
+            <div class="seleccionador">
+              <select name="seleccionador" id="seleccionador">
+                <option value="productos">Productos</option>
+                <option value="equipos">Equipos</option>
+                <option value="accesorios">Accesorios</option>
+              </select>
+            </div>
+            <button class="boton" id="boton">Añadir nuevo</button>
+          </div>
+
+          <div class="fila">
+            <div class="seleccionador">
+              <select name="seleccionador" id="seleccionador">
+                <option value="buscar">Buscar por</option>
+                <option value="nombre">Nombre</option>
+                <option value="id">ID</option>
+              </select>
+            </div>
+            <input
+              class="busqueda"
+              type="text"
+              name="buscar"
+              id="buscar"
+              placeholder="Buscar"
+            />
+
+            <button class="boton" id="boton">Filtrar</button>
+          </div>
+
+          <div class="fila">
+            <div id="texto_busqueda_avanzada" class="texto_busqueda_avanzada">
+              Búsqueda avanzada
+            </div>
+          </div>
+        </div>
+
+        <div id="busqueda_avanzada" class="busqueda_avanzada hidden">
+          <div class="fila avanzada">
+            <div class="filtro_titulo">RAM [Hasta 12GB]</div>
+            <div class="filtro_titulo">Procesador</div>
+            <div class="filtro_titulo">Cámara [Hasta 108px]</div>
+            <div class="filtro_titulo">Precio</div>
+            <div class="filtro_titulo">Plan</div>
+          </div>
+          <div class="fila fila_minmax">
+            <div class="contenedor_minmax">
+              <div class="minmax">
+                <div class="minmax_texto">Mínimo</div>
+                <input
+                  class="busqueda input_num"
+                  type="text"
+                  name="buscar"
+                  id="buscar"
+                  placeholder="Min"
+                />
+              </div>
+
+              <div class="minmax">
+                <div class="minmax_texto">Máximo</div>
+                <input
+                  class="busqueda input_num"
+                  type="text"
+                  name="buscar"
+                  id="buscar"
+                  placeholder="Max"
+                />
+              </div>
+            </div>
+
+            <div class="contenedor_minmax">
+              <div class="minmax">
+                <div class="minmax_texto">Mínimo</div>
+                <input
+                  class="busqueda input_num"
+                  type="text"
+                  name="buscar"
+                  id="buscar"
+                  placeholder="Min"
+                />
+              </div>
+
+              <div class="minmax">
+                <div class="minmax_texto">Máximo</div>
+                <input
+                  class="busqueda input_num"
+                  type="text"
+                  name="buscar"
+                  id="buscar"
+                  placeholder="Max"
+                />
+              </div>
+            </div>
+
+            <div class="contenedor_minmax">
+              <div class="minmax">
+                <div class="minmax_texto">Mínimo</div>
+                <input
+                  class="busqueda input_num"
+                  type="text"
+                  name="buscar"
+                  id="buscar"
+                  placeholder="Min"
+                />
+              </div>
+
+              <div class="minmax">
+                <div class="minmax_texto">Máximo</div>
+                <input
+                  class="busqueda input_num"
+                  type="text"
+                  name="buscar"
+                  id="buscar"
+                  placeholder="Max"
+                />
+              </div>
+            </div>
+
+            <div class="contenedor_minmax">
+              <div class="minmax">
+                <div class="minmax_texto">Mínimo</div>
+                <input
+                  class="busqueda input_num"
+                  type="text"
+                  name="buscar"
+                  id="buscar"
+                  placeholder="Min"
+                />
+              </div>
+
+              <div class="minmax">
+                <div class="minmax_texto">Máximo</div>
+                <input
+                  class="busqueda input_num"
+                  type="text"
+                  name="buscar"
+                  id="buscar"
+                  placeholder="Max"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------CARDS------------- -->
+      <div class="container__cards">
+        <section id = "cards" class="cards">
+          <div class="card">
+            <img class="card__img" src="././static/resources/images/iphone.jpg" alt="" />
+            <h3 class="card__titulo">Samsung Galaxy</h3>
+            <h3 class="card__precio">$13.99</h3>
+            <a href="javascript:abrirDetalles('this')" class="card__btn boton">Detalles</a>
+          </div>
+        </section>
+      </div>
+      <script src="../static/js/doc.js"></script>
+      <script src="../static/js/cliente_catalogo.js"></script>
+    </main>
+
+    <!-- ----------------- VENTANA FLOTANTE ------------- -->
+    <div id="vent" class="container-ventana">
+      <div class="ventana">
+        <a class="ventana__cerrar" href="javascript:cerrar()"
+          ><img
+            class="ventana__cerrar-img"
+            src="././static/resources/images/icon-cerrar.svg"
+            alt=""
+        /></a>
+        <h2 class="ventana__titulo">Equipo</h2>
+        <div class="ventana__caracteristicas">
+          <img class="ventana__img" src="././static/resources/images/iphone.jpg" alt="" />
+          <div class="ventana__descripcion">
+            <p class="ventana__detalle">
+              Nombre: <span class="ventana__detalle-valor" id="p_nombre"> </span>
+            </p>
+            <p class="ventana__detalle">
+              Descripción:
+              <span class="ventana__detalle-valor" id="p_descripcion">
+              </span>
+            </p>
+            <p class="ventana__detalle">
+              Garantia: <span class="ventana__detalle-valor"id="p_garantia"> </span>
+            </p>
+            <p class="ventana__detalle">
+              Precio Producto: $<span class="ventana__detalle-valor" id="p_precio"> </span>
+            </p>
+            <p class="ventana__detalle">
+              Stock: <span class="ventana__detalle-valor" id="p_stock"> </span>
+            </p>
+          </div>
+        </div>
+        <div class="container-promos">
+          <div class="promo">
+            <h3 class="promo__titulo">PLAN</h3>
+            <p id="p_plan"class="promo__descripcion">
+              
+            </p>
+          </div>
+          <div class="promo">
+            <h3 class="promo__titulo">ACCESORIO</h3>
+            <p id="p_accesorio"class="promo__descripcion">
+              
+            </p>
+          </div>
+          <div class="promo">
+            <h3 class="promo__titulo">OFERTA</h3>
+            <p id="p_oferta" class="promo__descripcion">
+              
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <script src="../static/js/cliente_catalogo.js"></script>
+  </body>
+</html>

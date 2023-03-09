@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <title>Login</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <main class="container-login">
+        <section class="login-section1">
+            <img class="login-logo" src="./static/resources/images/logo.svg" alt="">
+            <h1>TELECO S.A.C</h1>
+            <h3>Empresa de Telecomunicaciones</h3>
+        </section>
+        <section class="login-section2">
+            <img class="login-logo-celeste" src="./static/resources/images/logo_celeste.png" alt="">
+            <h2>Iniciar Sesión</h2>
+            <h4>Bienvenido</h4>
+            <label for="usuario">Usuario</label>
+            <input type="text" placeholder="Ingrese su usuario" 
+                    name="usuario" placeholder="Nombre de usuario"
+                    id="usuario"/>
+
+            <label for="contrasenia">Contraseña</label>
+            <input type="text" placeholder="*********" name="contrasenia" id="contrasenia"/>
+            <button class="login-button" onclick="login()" >Ingresar</button>
+        </section>
+    </main>
+    <script src="../static/js/login.js"></script>
+</body>
+</html>

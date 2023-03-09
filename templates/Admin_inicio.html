@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Administrador</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <aside>
+      <div class="menu">
+        <img class="menu__logo" src="./static/resources/images/logo.svg" alt="" />
+        <a href="/admin_inicio" class="menu__btn activo">
+          <img class="menu__icon" src="./static/resources/images/icon-home.svg" alt="" />
+          <h2 class="menu__categoría">Inicio</h2>
+        </a>
+        <a href="/admin_inventario" class="menu__btn ">
+          <img class="menu__icon" src="./static/resources/images/icon_inventario.png" alt="" />
+          <h2 class="menu__categoría">Inventario</h2>
+        </a>
+        <a href="/admin_empleados" class="menu__btn ">
+          <img class="menu__icon" src="./static/resources/images/icon_empleados.png" alt="" />
+          <h2 class="menu__categoría">Empleados</h2>
+        </a>
+      </div>
+      <!-- -->
+      <button class="cerrar_sesion" href="">
+        <img class="menu__icon" src="./static/resources/images/icon-salir.svg" alt="" />
+        <h2 class="menu__categoría">Cerrar Sesión</h2>
+      </button>
+    </aside>
+
+    <main>
+      <header class="header">
+        <h2 class="header__tipo-usuario">ADMINISTRADOR</h2>
+        <div class="header__usuario">
+            <h3 class="header__nombre">Jose Rodolfo</h3>
+            <img class="header__icon-usuario" src="./static/resources/images/icon-usuario.svg" alt="" />
+        </div>
+    </header>
+
+      <div class="contenedor contenedor_inicio">
+        <div class="contenedor__imagen_bienvenida">
+          <img src="./static/resources/images/logo_celeste.png" alt="" />
+        </div>
+          <h1 class="contenedor__titulo">Bienvenido</h1>
+      </div>
+
+      <script src="../static/js/doc.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Vendedor</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <aside>
+      <div class="menu">
+        <img class="menu__logo" src="./static/resources/images/logo.svg" alt="" />
+        <a href="/vendedor_inicio" class="menu__btn ">
+          <img class="menu__icon" src="./static/resources/images/icon-home.svg" alt="" />
+          <h2 class="menu__categoría">Inicio</h2>
+        </a>
+        <a href="/vendedor_inventario" class="menu__btn">
+          <img class="menu__icon" src="././static/resources/images/Icono-Productos.svg" alt="" />
+          <h2 class="menu__categoría">Productos</h2>
+        </a>
+        <a href="/vendedor_ventas" class="menu__btn">
+          <img class="menu__icon" src="./static/resources/images/icon_ventas.png" alt="" />
+          <h2 class="menu__categoría">Ventas</h2>
+        </a>
+        <a href="/vendedor_vender" class="menu__btn activo">
+          <img class="menu__icon" src="./static/resources/images/Icono-Vender.png" alt="" />
+          <h2 class="menu__categoría">Vender</h2>
+        </a>
+      </div>
+      <!-- -->
+      <button class="cerrar_sesion" href="">
+        <img class="menu__icon" src="./static/resources/images/icon-salir.svg" alt="" />
+        <h2 class="menu__categoría">Cerrar Sesión</h2>
+      </button>
+    </aside>
+
+    <main>
+      <header class="header">
+        <h2 class="header__tipo-usuario">VENDEDOR</h2>
+        <div class="header__usuario">
+          <h3 class="header__nombre">Jose Rodolfo</h3>
+          <img
+            class="header__icon-usuario"
+            src="/./static/resources/images/icon-usuario.svg"
+            alt=""
+          />
+        </div>
+      </header>
+      <div class="contenedor contenedor_inventario">
+        <div class="titulo">
+          <h1>VENDER</h1>
+        </div>
+        <div class="botones">
+          <div class="fila">
+            <div class="seleccionador">
+              <select name="seleccionador" id="seleccionador">
+                <option value="productos">Productos</option>
+                <option value="equipos">Equipos</option>
+                <option value="accesorios">Accesorios</option>
+              </select>
+            </div>
+            <button class="boton" id="boton">Añadir nuevo</button>
+          </div>
+
+          <div class="fila">
+            <div class="seleccionador">
+              <select name="seleccionador" id="seleccionador">
+                <option value="buscar">Buscar por</option>
+                <option value="nombre">Nombre</option>
+                <option value="id">ID</option>
+              </select>
+            </div>
+            <input
+              class="busqueda"
+              type="text"
+              name="buscar"
+              id="buscar"
+              placeholder="Buscar"
+            />
+
+            <button class="boton" id="boton">Filtrar</button>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor_tabla">
+        <table id="tabla-vender" class="tabla-productos">
+          <tr>
+            <th>Ver / Añadir</th>
+            <th></th>
+            <th>Nombre</th>
+            <th>ID</th>
+            <th>Stock</th>
+            <th>Precio</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="opciones">
+                <a href="" class="boton ver" id="boton">
+                  <span class="icono"
+                    ><img src="././static/resources/images/acercar.png" alt=""
+                  /></span>
+                </a>
+
+                <a
+                  href="javascript:abrircarrito()"
+                  class="boton agregar"
+                  id="boton"
+                >
+                  <span class="icono"
+                    ><img src="././static/resources/images/mas.png" alt=""
+                  /></span>
+                </a>
+              </div>
+            </td>
+            <td>
+              <img class="img_miniatura" src="././static/resources/images/iphone.png" alt="" />
+            </td>
+
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>12</td>
+            <td>235</td>
+          </tr>
+        </table>
+        <div class="btn-ver-carrito">
+          <a class="boton" href="javascript:abrircarrito()">Ver carrito</a>
+        </div>
+      </div>
+    </main>
+
+    <!-------------------- VER PRODUCTO------------ -->
+<div id="vent" class="container-ventana">
+      <div class="ventana">
+        <a class="ventana__cerrar" href="javascript:cerrar()"
+          ><img
+            class="ventana__cerrar-img"
+            src="././static/resources/images/icon-cerrar.svg"
+            alt=""
+        /></a>
+        <h2 class="ventana__titulo">Equipo</h2>
+        <div class="ventana__caracteristicas">
+          <img id="p_link" class="ventana__img" src="././static/resources/images/iphone.jpg" alt="" />
+          <div class="ventana__descripcion">
+            <p class="ventana__detalle">
+              Nombre: <span class="ventana__detalle-valor" id="p_nombre"> </span>
+            </p>
+            <p class="ventana__detalle">
+              Descripción:
+              <span class="ventana__detalle-valor" id="p_descripcion">
+              </span>
+            </p>
+            <p class="ventana__detalle">
+              Garantia: <span class="ventana__detalle-valor"id="p_garantia"> </span>
+            </p>
+            <p class="ventana__detalle">
+              Precio Producto: $<span class="ventana__detalle-valor" id="p_precio"> </span>
+            </p>
+            <p class="ventana__detalle">
+              Stock: <span class="ventana__detalle-valor" id="p_stock"> </span>
+            </p>
+          </div>
+        </div>
+        <div class="container-promos">
+          <div class="promo">
+            <h3 class="promo__titulo">PLAN</h3>
+            <p id="p_plan"class="promo__descripcion">
+              
+            </p>
+          </div>
+          <div class="promo">
+            <h3 class="promo__titulo">ACCESORIO</h3>
+            <p id="p_accesorio"class="promo__descripcion">
+              
+            </p>
+          </div>
+          <div class="promo">
+            <h3 class="promo__titulo">OFERTA</h3>
+            <p id="p_oferta" class="promo__descripcion">
+              
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-------------------- VER CARRITO------------ -->
+
+    <div id="carrito" class="container-ventana">
+      <div class="ventana">
+        <a class="ventana__cerrar" href="javascript:cerrarcarrito()"
+          ><img
+            class="ventana__cerrar-img"
+            src="././static/resources/images/icon-cerrar.svg"
+            alt=""
+        /></a>
+        <h2 class="ventana__titulo">Carrito de Venta</h2>
+
+        <input
+          class="busqueda"
+          type="text"
+          id="cliendId"
+          placeholder="Cliente"
+        />
+        <table id="tabla_carrito" class="tabla-carrito">
+          <thead>
+            <tr>
+              <th class="tabla_carrito__head">ID</th>
+              <th class="tabla_carrito__head">Producto</th>
+              <th class="tabla_carrito__head">Cantidad</th>
+              <th class="tabla_carrito__head">Unidad</th>
+              <th class="tabla_carrito__head">Total</th>
+            </tr>
+          </thead>
+        </table>
+        <div>
+          <h3 class="carrito-importes">
+            Subtotal: <span id="subtotal"class="carrito-importes-valor"> </span>
+          </h3>
+          <h3 class="carrito-importes">
+            Descuento:
+            <span id="descuento"class="carrito-importes-valor"> </span>
+          </h3>
+          <h3 class="carrito-importes">
+            Importe Total:
+            <span id="importe"class="carrito-importes-valor"> </span>
+          </h3>
+        </div>
+        <div class="seleccionador">
+          <select name="seleccionador" id="seleccionador_pago">
+            <option value=" ">Tipo de Pago</option>
+            <option value="EFECTIVO">Efectivo</option>
+            <option value="TARJETA DE CREDITO">Tarjeta de credito</option>
+            <option value="TARJETA DE DEBITO">Tarjeta de debito</option>
+            <option value="APLICACION DE PAGO">Aplicación de Pago</option>
+          </select>
+        </div>
+        <hr />
+
+        <div class="btns-carrito">
+          <a href="javascript:abrircotizacion()" class="boton">Cotizar</a>
+          <a href="javascript: generarVenta()" class="boton"
+            >Generar Venta</a
+          >
+        </div>
+      </div>
+    </div>
+
+
+    <script src="../static/js/doc.js"></script>
+    <script src="../static/js/vendedor_vender.js"></script>
+  </body>
+</html>
